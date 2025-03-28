@@ -20,7 +20,7 @@ public class TollStation {
         totalCollected += vehicle.getTollFee();
     }
     
-    public int getTotallToll(){
+    public int getTotalToll(){
         return totalCollected;
     }
     public void printTollSummary() {
