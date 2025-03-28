@@ -9,7 +9,7 @@ public class TollStationTest {
 
     @BeforeEach
     void setup() {
-        station = new TollStation("Peaje Norte", "Barcelona");
+        station = new TollStation("Peaje Norte", "Barcelona"); 
     }
 
     @Test
