@@ -10,5 +10,5 @@ abstract class Vehicle{
     public String getLicensePlate(){
         return licensePlate;
     }
-    public abstract double getTollFee();
+    public abstract int getTollFee();
 }
