@@ -8,7 +8,7 @@ public class Truck extends Vehicle {
         this.axles = axles;
     }
     @Override
-    public int getTollFee(){
-        return axles * 50;
+    public int getTollFee() {
+        return 50 * axles;
     }
 }

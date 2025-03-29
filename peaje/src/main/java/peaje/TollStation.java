@@ -25,7 +25,7 @@ public class TollStation {
         return totalToll;
     }
 
-    // Mejorado con formato numérico
+   
     public void printTollSummary() {
         StringBuilder summary = new StringBuilder();
         NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
@@ -38,7 +38,7 @@ public class TollStation {
         System.out.println(summary.toString());
     }
 
-    // Sobrescribir toString para una salida más flexible
+    
     @Override
     public String toString() {
         NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();

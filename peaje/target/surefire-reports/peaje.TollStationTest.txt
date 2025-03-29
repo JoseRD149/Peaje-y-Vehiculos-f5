@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: peaje.TollStationTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in peaje.TollStationTest
-peaje.TollStationTest.registeringVehiclesShouldIncreaseTotalToll  Time elapsed: 0.005 s  <<< ERROR!
-java.lang.NoSuchMethodError: 'int peaje.Vehicle.getTollFee()'
-	at peaje.TollStationTest.registeringVehiclesShouldIncreaseTotalToll(TollStationTest.java:22)
-

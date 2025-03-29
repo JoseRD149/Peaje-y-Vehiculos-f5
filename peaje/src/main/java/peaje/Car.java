@@ -5,8 +5,7 @@ public class Car extends Vehicle{
         super(licensePlate);
     }
     @Override
-
-    public int getTollFee(){
+    public int getTollFee() {
         return 100;
     }
     

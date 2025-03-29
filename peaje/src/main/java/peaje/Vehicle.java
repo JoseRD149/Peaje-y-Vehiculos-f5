@@ -1,7 +1,6 @@
 package peaje;
 
-abstract class Vehicle{
-
+public abstract class Vehicle {
     protected String licensePlate;
 
     public Vehicle(String licensePlate){
