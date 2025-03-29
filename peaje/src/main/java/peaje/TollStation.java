@@ -1,6 +1,7 @@
 package peaje;
 import java.util.ArrayList;
 import java.util.List;
+import java.text.NumberFormat;
 
 public class TollStation {
     private String name;
@@ -23,12 +24,25 @@ public class TollStation {
     public int getTotalToll() {
         return totalToll;
     }
+
+    // Mejorado con formato numérico
     public void printTollSummary() {
-        System.out.println("Estación de Peaje: " + name);
-        System.out.println("Ciudad: " + city);
-        System.out.println("Total Recopilado: $" + totalToll);
-        System.out.println("Número de Vehículos: " + vehicles.size());
+        StringBuilder summary = new StringBuilder();
+        NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
+
+        summary.append("Estación de Peaje: ").append(name).append("\n")
+               .append("Ciudad: ").append(city).append("\n")
+               .append("Total Recopilado: ").append(currencyFormat.format(totalToll)).append("\n")
+               .append("Número de Vehículos: ").append(vehicles.size()).append("\n");
+
+        System.out.println(summary.toString());
+    }
+
+    // Sobrescribir toString para una salida más flexible
+    @Override
+    public String toString() {
+        NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
+        return String.format("Estación de Peaje: %s, Ciudad: %s, Total Recopilado: %s, Número de Vehículos: %d",
+                name, city, currencyFormat.format(totalToll), vehicles.size());
     }
 }
-
-   
